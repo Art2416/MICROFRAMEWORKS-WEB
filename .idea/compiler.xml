@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Aplicaciones-distribuidas-http-sockets-html-js-" />
         <module name="Taller1" />
+        <module name="MICROFRAMEWORKS-WEB" />
       </profile>
     </annotationProcessing>
   </component>

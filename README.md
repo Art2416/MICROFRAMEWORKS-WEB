@@ -1,16 +1,16 @@
-# Taller # 2
-## TALLER DISEÑO Y ESTRUCTURACIÓN DE APLICACIONES DISTRIBUIDAS EN INTERNET
+# Taller # 3
+## MICROFRAMEWORKS WEB
 
 ### Nombre: David Arturo Narváez Lossa
 
-Escriba un servidor web que soporte múlltiples solicitudes seguidas (no concurrentes). El servidor debe leer los archivos del disco local y retornar todos los archivos solicitados, incluyendo páginas html, archivos java script, css e imágenes. Construya una aplicación web con  javascript, css, e imágenes para probar su servidor. Incluya en la aplicación la comunicación asíncrona con unos servicios REST en el backend. NO use frameworks web como Spark o Spring, use solo Java y las librerías para manejo de la red.
+Para este ejercicio usted deb construir un  servidor web para soportar una funcionalidad similar a la de Spark. Su aplicación debe permitir por lo menos el registro de servicios get y post usando funciones lambda. Implemente igualmente funciones que le permitan configurar el directorio de los archivos estáticos, y otra que permita cambiar el tipo de la respuesta a "application/json". Para esto solo debe usar el API básico de Java. No utilice frameworks como Spark o Spring.
 ### Requerimientos:
 
 Tener instalado maven, entorno de desarrollo para el lenguaje (java) repositorio de git (https://github.com/Art2416/Aplicaciones-distribuidas-dise-o-y-estructuracion.git)
 
 ### Ejecución del programa
 
-* Para ejecutar lo primero es clonar el repositorio (https://github.com/Art2416/Aplicaciones-distribuidas-dise-o-y-estructuracion.git). 
+* Para ejecutar lo primero es clonar el repositorio (https://github.com/Art2416/MICROFRAMEWORKS-WEB.git). 
 * Poner en ejecución el servidor web ya sea desde mvn iniciando la clase (Aplicación).
 * Ingresar desde el navegador (mozila preferiblemente).
 * En la barra de búsqueda ingresar http://localhost:35000
@@ -18,20 +18,21 @@ Tener instalado maven, entorno de desarrollo para el lenguaje (java) repositorio
     1. http://localhost:35000/apps/index.html
   2. http://localhost:35000/apps/index.css
   3. http://localhost:35000/apps/script.js
-  4. http://localhost:35000/apps/noEncontrado
-  
+* En cada uno de estos se está empleando funcionamiento del get con la función lambda  
 ## Ejecuciones 
 
 
-![](./img/1.png)
 
-![](./img/3.png)
 
 ![](./img/4.png)
 
+![](./img/index.png)
+
 ![](./img/5.png)
 
-![](./img/6.png)
+![](./img/lambda.png)
+
+![](./img/get.png)
 
 
 ### Información adicional
