@@ -2,9 +2,12 @@ package escuelaing.edu.co.arep;
 
 import java.net.*;
 import java.util.HashMap;
+
+import escuelaing.edu.co.arep.sparkService.Service;
 import org.json.*;
 import java.io.*;
 import java.util.Map;
+import java.util.Objects;
 
 
 /**
@@ -62,7 +65,10 @@ public class HttpServer {
                 }
             }
             if (ruta.startsWith("/apps/")) {
-                outputLine = ejecucion(ruta.substring(5));
+                outputLine = ruta.substring(5);
+                if (Service.requests.containsKey(outputLine)){
+                    outputLine = Service.requests.get(outputLine).getResponse();
+                }
             } else if (!nombrePelicula.equals("")) {
                 String response = Conection.busqueda(nombrePelicula, "http://www.omdbapi.com/?t=" + nombrePelicula + "&apikey=62c22013");
                 outputLine ="HTTP/1.1 200 OK\r\n" + "Content-Type: text/html\r\n" + "\r\n" + "<br>" + "<table border=\" 1 \"> \n " + organizacion(response)+ "    </table>";
